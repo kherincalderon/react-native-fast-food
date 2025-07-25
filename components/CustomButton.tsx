@@ -5,7 +5,7 @@ import { CustomButtonProps } from '@/type';
 
 import cn from 'clsx';
 
-const CustomButtton = ({
+const CustomButton = ({
   onPress,
   title = 'Click me',
   style,
@@ -29,4 +29,4 @@ const CustomButtton = ({
   );
 };
 
-export default CustomButtton;
+export default CustomButton;

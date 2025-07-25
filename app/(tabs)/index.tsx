@@ -14,12 +14,8 @@ import cn from 'clsx';
 import { images, offers } from '@/constants';
 
 import CartButton from '@/components/CartButton';
-import useAuthStore from '@/store/auth.store';
 
 export default function App() {
-  const { user } = useAuthStore();
-
-  console.log('USER: ', JSON.stringify(user, null, 2));
   return (
     <SafeAreaView className="flex-1 bg-white">
       <FlatList

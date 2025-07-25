@@ -1,4 +1,4 @@
-import CustomButtton from '@/components/CustomButtton';
+import CustomButton from '@/components/CustomButton';
 import CustomInput from '@/components/CustomInput';
 import { createUser } from '@/lib/appwrite';
 import * as Sentry from '@sentry/react-native';
@@ -57,11 +57,7 @@ const SignUp = () => {
         secureTextEntry={true}
       />
 
-      <CustomButtton
-        title="Sign Up"
-        isLoading={isSubmitting}
-        onPress={submit}
-      />
+      <CustomButton title="Sign Up" isLoading={isSubmitting} onPress={submit} />
 
       <View className="flex justify-center mt-5 flex-row gap-2">
         <Text className="base-regular text-grey-100">
